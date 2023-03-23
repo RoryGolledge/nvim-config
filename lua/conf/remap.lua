@@ -48,7 +48,7 @@ vim.keymap.set("n", "<C-J>", "<C-W>j")
 vim.keymap.set("n", "<C-K>", "<C-W>k")
 vim.keymap.set("n", "<C-L>", "<C-W>l")
 
-vim.keymap.set("t", "<C-Space>", "<C-\\><C-n>")
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 vim.keymap.set("t", "<C-H>", "<C-\\><C-n><C-W>h")
 vim.keymap.set("t", "<C-J>", "<C-\\><C-n><C-W>j")
 vim.keymap.set("t", "<C-K>", "<C-\\><C-n><C-W>k")
