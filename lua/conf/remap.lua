@@ -54,3 +54,5 @@ vim.keymap.set("t", "<C-J>", "<C-\\><C-n><C-W>j")
 vim.keymap.set("t", "<C-K>", "<C-\\><C-n><C-W>k")
 vim.keymap.set("t", "<C-L>", "<C-\\><C-n><C-W>l")
 
+vim.keymap.set("n", "<leader>?", "<cmd> lua vim.diagnostic.open_float() <CR>")
+
