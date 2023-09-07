@@ -13,13 +13,16 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    use({
+    --[[use({
         'rose-pine/neovim',
         as = 'rose-pine',
         config = function()
             vim.cmd('colorscheme rose-pine')
         end
-    })
+    })]]--
+
+    use 'navarasu/onedark.nvim'
+
 
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('nvim-treesitter/playground')
@@ -50,16 +53,16 @@ return require('packer').startup(function(use)
 	  }
 	}
 
-    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-        require("toggleterm").setup{
-            open_mapping = [[\\]],
-            insert_mappings = true
-        }
-    end}
-
-
     use({
         "aserowy/tmux.nvim",
         config = function() return require("tmux").setup() end
     })
+
+
+    use ({
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    })
+
+
 end)
